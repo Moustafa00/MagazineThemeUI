@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-<header className="flex justify-between items-center py-4 px-8 border-b border-gray-400 w-[90%] mx-auto">
+<header className="container flex justify-between items-center py-4 px-8 border-b border-gray-400 w-[90%] mx-auto">
       
     {/* Left Side*/}
         <div>

@@ -1,6 +1,6 @@
 const PostGallery = () => (
-
-    <div className="flex flex-auto gap-10 mt-6 justify-baseline items-center space-x-20 mx-20">
+  <div className="flex justify-center">
+    <div className="flex flex-wrap gap-0.2 mt-6 justify-baseline items-center space-x-4 mx-auto">
       {[
         { img: "image13.png", text: "THE HOUSE IS OPEN TO YOU NOW" },
         { img: "image14.png", text: "OLD SHIRTS TO GET USED TO" },
@@ -15,9 +15,7 @@ const PostGallery = () => (
         </div>
       ))}
     </div>
-
-
+  </div>
 );
-
 
 export default PostGallery;

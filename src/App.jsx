@@ -24,7 +24,7 @@ function App() {
           <div className="min-h-screen flex flex-col">
             <main className="container mx-auto px-4 sm:px-6 lg:px-20 flex-grow">
               <Header />
-              <Home />
+              <Pages />
             </main>
           </div>
         } />
@@ -33,7 +33,7 @@ function App() {
           <div className="min-h-screen flex flex-col">
             <main className="container mx-auto px-4 sm:px-6 lg:px-20 flex-grow">
               <Header />
-              <Home />
+              <Shop />
             </main>
           </div>
         } />
@@ -42,7 +42,7 @@ function App() {
           <div className="min-h-screen flex flex-col">
             <main className="container mx-auto px-4 sm:px-6 lg:px-20 flex-grow">
               <Header />
-              <Home />
+              <Blog />
             </main>
           </div>
         } />
@@ -51,15 +51,15 @@ function App() {
           <div className="min-h-screen flex flex-col">
             <main className="container mx-auto px-4 sm:px-6 lg:px-20 flex-grow">
               <Header />
-              <Home />
+              <Video />
             </main>
           </div>
         } />
 
         <Route path="/new" element={
           <div className="min-h-screen flex flex-col">
-            <Header />
             <main className="container mx-auto px-4 sm:px-6 lg:px-20 flex-grow">
+              <Header />
               <New />
             </main>
           </div>

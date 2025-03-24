@@ -1,4 +1,4 @@
-const Preview = ({ 
+const Preview = ({
   date = "Sep 24, 2012",
   author = "Jenny Jensen",
   tags = ["Art", "Painting"],
@@ -11,7 +11,7 @@ const Preview = ({
   tagBorderColor = "border-current",
   backgroundColor = "bg-white"
 }) => (
-  <div className={`container px-4 w-[90%] sm:px-6 lg:px-8 mx-auto mb-5 ${backgroundColor}`}>
+  <div className={`mx-auto mb-5 ${backgroundColor}`}>
     <div className="mt-6 md:mt-10 flex flex-col md:flex-row gap-4">
       {/* Left Content Section */}
       <div className="flex-1 flex flex-col">
@@ -22,7 +22,7 @@ const Preview = ({
           <span>by {author}</span>
           <div className="flex gap-2">
             {tags.map((tag, index) => (
-              <span 
+              <span
                 key={index}
                 className={`border ${tagBorderColor} rounded-full px-2 py-1`}
               >
@@ -38,25 +38,25 @@ const Preview = ({
         </h1>
 
         {/* Description Section */}
-<div class="hidden md:block relative mt-[10%] pb-8">
-  <p class="text-lg md:text-xl lg:text-2xl max-w-sm">
-  {description}
-  </p>
-  <span class="absolute bottom-0 left-0 w-full h-[1.25px] bg-gray-500"></span>
-</div>
+        <div class="hidden md:block relative mt-[10%] pb-8">
+          <p class="text-lg md:text-xl lg:text-2xl max-w-sm">
+            {description}
+          </p>
+          <span class="absolute bottom-0 left-0 w-full h-[1.25px] bg-gray-500"></span>
+        </div>
       </div>
 
       {/* Image Section */}
       <span class="">
-    <img 
-      src={imageUrl} 
-      class="w-full h-[80%]"
-      alt="image"
-    />
-  </span>
-  
+        <img
+          src={imageUrl}
+          class="w-full h-[80%]"
+          alt="image"
+        />
+      </span>
+
     </div>
-    
+
   </div>
 );
 

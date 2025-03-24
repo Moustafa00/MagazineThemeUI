@@ -20,10 +20,10 @@ const FooterSection = () => (
     {/* Social Icons */}
     <div className="flex justify-center items-center gap-x-4 my-5 flex-wrap">
       {socialMediaIcons.map((icon, index) => (
-        <img 
-          key={index} 
-          src={`images/${icon}`} 
-          alt="social-icon" 
+        <img
+          key={index}
+          src={`images/${icon}`}
+          alt="social-icon"
           className="w-8 h-8 md:w-6 md:h-6 hover:opacity-75 transition-opacity"
         />
       ))}
